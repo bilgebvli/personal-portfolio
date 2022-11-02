@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+    color: #212121;
+  }
+}
+
+//contact grant color
+//background-image: linear-gradient(to right, #dfdfdf, #f6eee3);
+//background: linear-gradient(90deg, rgba(246,238,227,1) 35%, rgba(176,176,176,0.8870141806722689) 100%);
+//background: linear-gradient(90deg, rgba(246,238,227,0.6881346288515406) 35%, rgba(176,176,176,0.5452774859943977) 100%);
+//linear-gradient(#b0b0b005, #f6eee3)
