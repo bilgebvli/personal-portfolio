@@ -15,7 +15,7 @@
       <router-link
         v-for="(item, index) in navItems"
         :key="index"
-        :to="{ path: '/home', hash: `#${item.urlHash}` }"
+        :to="{ path: '/', hash: `#${item.urlHash}` }"
         :class="{
           'text-base font-normal uppercase': true,
           'mx-5 px-5': item.space,
