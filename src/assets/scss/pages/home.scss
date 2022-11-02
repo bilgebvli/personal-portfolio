@@ -1,0 +1,11 @@
+.about {
+  background-color: #4e3229;
+  @media screen and (max-width: 768px) {
+    p {
+      &:first-child {
+        margin-top: -5px;
+        font-size: 8px;
+      }
+    }
+  }
+}
