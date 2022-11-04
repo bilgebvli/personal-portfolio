@@ -14,7 +14,7 @@
           href="https://www.linkedin.com/in/bilge-bavli-210326170/"
           :class="linkClasses"
         >
-          View Projects
+          More about me
         </a>
       </div>
       <div class="pt-5 w-full md:w-2/5">

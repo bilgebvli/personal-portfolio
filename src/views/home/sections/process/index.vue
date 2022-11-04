@@ -3,15 +3,15 @@
 
   <div class="deneme mx-0 lg:mx-52">
     <div class="bg-puff text-ana mt-20 text-center">
-      <h2 :class="titleClasses">Process</h2>
-      <div
-        class="mb-3 text-center shadow-2xl shadow-white p-5"
-        v-for="(item, index) of processItems"
-        :key="index"
-      >
-        <div class="h-5 border-l text-center w-3 inline-block my-5"></div>
-        <h2 class="pb-1 text-base tracking-m">{{ item.title }}</h2>
-        <p class="text-sm">{{ item.text }}</p>
+      <div>
+        <h2 :class="titleClasses">Process</h2>
+      </div>
+      <div class="md:grid gap-4 grid-cols-2 grid-rows-2">
+        <div :class="off" v-for="(item, index) of processItems" :key="index">
+          <div class="h-5 border-l text-center w-3 inline-block my-5"></div>
+          <h2 class="pb-1 text-base tracking-m">{{ item.title }}</h2>
+          <p class="text-sm" v-html="item.text"></p>
+        </div>
       </div>
     </div>
   </div>
@@ -32,27 +32,37 @@ export default defineComponent({
           font-normal
           pl-3 inline-block`;
     },
+    off() {
+      return `mb-3
+          text-center
+          shadow-2xl shadow-white
+          p-5
+          hover:scale-105
+          ease-out
+          duration-300`;
+    },
     processItems() {
       return [
         {
-          title: 'BRIEF',
-          text: 'Fill in the brief as detailed as posible. And the result ill amaze you',
+          title: 'Discovery',
+          text: `The first step in designing a successful website is to gather information. you are first asked a lot of questions to help get a clear understanding of your business and your needs in a website. Certain things to consider are: <br/><br/> <strong>Purpose, Goals, Target Audience,
+Content</strong> <br/><br/> The above questions need to be considered when designing the look and feel of your website.`,
         },
         {
-          title: 'RESEARCH',
-          text: 'A lot of work to be done: competitive and visual analysis, target audience and market research',
+          title: 'Planning',
+          text: 'Using the information gathered from phase one, we first put together a plan.',
         },
         {
-          title: 'PROTOTYPE',
-          text: 'Designing the logical structure of the website',
+          title: 'Design',
+          text: 'Drawing from the information gathered to this point, we determine the look and feel of the site.',
         },
         {
-          title: 'VISUAL CONCEPT',
-          text: 'Designing the layout of the future website',
-        },
-        {
-          title: 'DEVELOPMENT',
+          title: 'Development',
           text: 'Final appearance of the product. After your approvement it goes to development.',
+        },
+        {
+          title: 'Delivery',
+          text: 'At this point, we attend to the final details and test your website.',
         },
       ];
     },
