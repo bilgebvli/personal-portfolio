@@ -1,5 +1,5 @@
 .contact {
-  .arrow-icon {
+  &__back-to-top {
     border: 0.1px solid #f4e4d7;
     text-align: center;
     padding: 5px 10px;
@@ -8,11 +8,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: background 0.5s 0s ease;
+
     &:hover {
       background-color: #f5e4d7;
     }
   }
-  .image-banner {
+  &__banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("@/assets/images/haute-stock-photography-laptop-and-chill-final-14.jpeg");
     min-height: 400px;
@@ -21,19 +22,19 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
-  }
-  .banner {
-    height: 250px;
-    background: rgb(115 110 104 / 41%);
-    position: absolute;
-    color: #e7d7c4;
-    font-size: 35px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 45px;
-    letter-spacing: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    a {
+      height: 250px;
+      background: rgb(115 110 104 / 41%);
+      position: absolute;
+      color: #e7d7c4;
+      font-size: 35px;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 45px;
+      letter-spacing: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
