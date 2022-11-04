@@ -4,6 +4,7 @@
       'bg-renk items-center flex shadow-xl ease-in-out transition': true,
       'h-0': !active,
       'h-24	': active,
+      active,
     }"
   >
     <div
