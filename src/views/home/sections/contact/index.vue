@@ -1,15 +1,15 @@
 <template>
   <div class="contact">
-    <div class="image-banner relative mt-12 shadow-2xl shadow-white">
-      <div class="banner p-3 md:w-5/12">
-        <span class="block text-3xl pb-4 font-black">Ask</span>
+    <div class="contact__banner relative mt-12 shadow-2xl shadow-white">
+      <a href="mailto:bilgebvli@gmail.com" class="banner p-3 md:w-5/12">
+        <span class="block text-3xl pb-3 font-black">Ask</span>
         <span class="border-b-4 text-4xl font-black">me</span>
-        <span class="block text-3xl pt-4 font-black">anything</span>
-      </div>
+        <span class="block text-3xl pt-5 font-black">anything</span>
+      </a>
     </div>
     <div :class="containerClasses">
       <div
-        class="absolute p-5 arrow-icon cursor-pointer"
+        class="absolute p-5 contact__back-to-top cursor-pointer"
         @click="scrollToTop()"
       >
         <vue-feather type="chevron-up"></vue-feather>

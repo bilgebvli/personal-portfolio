@@ -8,7 +8,7 @@
           front end developer
         </h2>
 
-        <p class="pt-8 md:pt-14 text-xs md:text-base tracking-wide">
+        <p class="pt-8 md:pt-14 text-sm md:text-base tracking-wide">
           Turning ideas into real life products is my calling.
         </p>
       </div>
@@ -30,7 +30,7 @@ export default defineComponent({
   name: 'SectionHome',
   computed: {
     rightTitleClasses() {
-      return 'absolute w-4/5	md:w-auto h-5 inset-y-1/2 left-5 md:inset-x-1/4 tracking-x md:text-xs text-ellipsis overflow-hidden ...';
+      return 'absolute w-4/5 text-mouth	md:w-auto h-5 inset-y-1/2 left-5 md:inset-x-1/4 tracking-x md:text-xs text-ellipsis overflow-hidden ...';
     },
     leftMenuClasses() {
       return 'bg-renk text-mouth flex items-center justify-center h-screen shadow';

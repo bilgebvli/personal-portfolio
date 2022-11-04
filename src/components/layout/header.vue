@@ -65,22 +65,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped lang="scss">
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  z-index: 1;
-  padding: 0;
-  transition: 0.5s;
-  a {
-    color: #f5e4d7;
-    &:nth-child(2) {
-      border-right: 1px solid #f5e4d7;
-      border-left: 1px solid #f5e4d7;
-    }
-  }
-}
-</style>
