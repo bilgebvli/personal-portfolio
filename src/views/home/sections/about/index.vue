@@ -5,8 +5,8 @@
         <h2 :class="titleClasses">ABOUT <br />STUDİO</h2>
         <p class="mt-5 text-sm md:text-base text-ana">
           My name is Bilge Bavli, I'm a front-end developer based in Istanbul,
-          Turkey. I have developed many types of front-ends from well know DJ
-          applications to Ecommerce booking platforms.<br />
+          Turkey. I have developed many types of front-ends from well know
+          Ecommerce platforms to Education applications.<br />
           I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces
           and intuitively implemented UX.
         </p>
