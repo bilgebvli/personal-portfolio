@@ -14,7 +14,7 @@
       >
         <vue-feather type="chevron-up"></vue-feather>
       </div>
-      <h3 class="mt-14 text-mouth">INTERESTED IN WORKİNG TOGETHER?</h3>
+      <h3 class="mt-14 text-mouth">INTERESTED IN WORKING TOGETHER?</h3>
       <a
         href="mailto:bilgebvli@gmail.com"
         class="text-sm underline underline-offset-4 mt-4 text-mouth"

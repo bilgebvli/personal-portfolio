@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20">
+  <div :class="{ 'pt-20 about': true, active }">
     <div :class="containerElementClasses">
       <div class="md:w-2/4 md:mt-40">
         <h2 :class="titleClasses">About Me</h2>
@@ -32,6 +32,9 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'SectionAbout',
+  data() {
+    return { active: false };
+  },
   computed: {
     containerElementClasses() {
       return 'mx-6 lg:mx-52 p-5 border border-son pt-12 shadow-xl md:flex justify-content';
@@ -43,5 +46,26 @@ export default defineComponent({
       return 'underline text-sm md:text-base text-ana underline-offset-8 mt-5 block';
     },
   },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.scrollY > 400) this.active = true;
+    },
+  },
 });
 </script>
+<style scoped lang="scss">
+.about {
+  opacity: 0;
+  &.active {
+    opacity: 1;
+    transform: translate3d(0, -30px, 0);
+    transition: 1s all cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
+</style>

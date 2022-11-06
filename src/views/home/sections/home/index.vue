@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 about">
+  <div class="grid grid-cols-2 home">
     <div :class="leftMenuClasses">
       <div class="w-11/12 md:w-96 mb-10 md:mb-0">
         <h2 class="text-3xl md:text-6xl leading-snug ml12">

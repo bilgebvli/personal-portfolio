@@ -6,7 +6,12 @@
       <div>
         <h2 :class="titleClasses">Process</h2>
       </div>
-      <div class="md:grid gap-4 grid-cols-2 grid-rows-2">
+      <div
+        :class="{
+          'md:grid gap-4 grid-cols-2 grid-rows-2 process-grid': true,
+          active,
+        }"
+      >
         <div :class="off" v-for="(item, index) of processItems" :key="index">
           <div class="h-5 border-l text-center w-3 inline-block my-5"></div>
           <h2 class="pb-1 text-base tracking-m">{{ item.title }}</h2>
@@ -22,6 +27,9 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'SectionProcess',
+  data() {
+    return { active: false };
+  },
   computed: {
     titleClasses() {
       return `text-2xl
@@ -67,5 +75,26 @@ Content</strong> <br/><br/> The above questions need to be considered when desig
       ];
     },
   },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.scrollY > 1500) this.active = true;
+    },
+  },
 });
 </script>
+<style scoped lang="scss">
+.process-grid {
+  opacity: 0;
+  &.active {
+    opacity: 1;
+    transform: translate3d(0, -30px, 0);
+    transition: 1s all cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
+</style>
