@@ -22,6 +22,9 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0;
+    @media only screen and (max-device-width: 1366px) {
+      background-attachment: scroll;
+    }
     a {
       height: 250px;
       background: rgb(115 110 104 / 41%);
