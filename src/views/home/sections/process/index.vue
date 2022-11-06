@@ -93,8 +93,8 @@ Content</strong> <br/><br/> The above questions need to be considered when desig
   opacity: 0;
   &.active {
     opacity: 1;
-    transform: translate3d(0, -30px, 0);
-    transition: 1s all cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform: translate3d(0, -20px, 0);
+    transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
   }
 }
 </style>
