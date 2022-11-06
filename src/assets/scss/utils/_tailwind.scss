@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea&family=IBM+Plex+Mono&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea&family=IBM+Plex+Mono&family=Raleway&family=Roboto&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +9,10 @@
 
 @layer base {
   html {
-    font-family: "Roboto", sans-serif;
+    // font-family: "Roboto", sans-serif;
+    // font-family: "Caladea", serif;
+    font-family: "Raleway", sans-serif;
+
     color: #212121;
   }
 }

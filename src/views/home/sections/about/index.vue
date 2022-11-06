@@ -37,7 +37,7 @@ export default defineComponent({
       return 'mx-6 lg:mx-52 p-5 border border-son pt-12 shadow-xl md:flex justify-content';
     },
     titleClasses() {
-      return 'text-2xl font-black border-l-4 border-oyy pl-3 text-ana mt-2 tracking-m';
+      return 'text-2xl font-black border-l-4 border-ana pl-3 text-ana mt-2 tracking-m';
     },
     linkClasses() {
       return 'underline text-sm md:text-base text-ana underline-offset-8 mt-5 block';

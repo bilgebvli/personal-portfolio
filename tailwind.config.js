@@ -15,7 +15,7 @@ module.exports = {
       den: '#a4978b',
       renk: '#b4a194',
       puff: '#e8e6da2b',
-      ana: '#b0a197',
+      ana: '#8d7e7e',
     },
     fontFamily: {
       sans: 'IBM Plex Mono, monospace',
