@@ -6,7 +6,10 @@
   <div class="deneme mx-0 lg:mx-20 md:grid md:grid-cols-3">
     <div :class="{ 'process-grid': true, active }">
       <div class="relative banner mt-20 md:mt-32">
-        <img src="@/assets/images/1667915720876.png" class="absolute" />
+        <img
+          src="@/assets/images/1667915720876.png"
+          class="absolute shadow-xl"
+        />
       </div>
     </div>
     <div class="bg-alicia text-taupe mt-20 col-span-2">
@@ -46,7 +49,7 @@ export default defineComponent({
           mb-10
           text-taupe
           border-l-4 border-taupe
-          font-normal
+          font-black
           pl-3 inline-block tracking-m`;
     },
     off() {
