@@ -3,7 +3,7 @@
     <div :class="containerElementClasses">
       <div class="md:w-2/4 md:mt-40">
         <h2 :class="titleClasses">About Me</h2>
-        <p class="mt-5 text-sm md:text-base text-ana">
+        <p class="mt-5 text-sm md:text-base text-taupe">
           My name is Bilge Bavli, I'm a front-end developer based in Istanbul,
           Turkey. I have developed many types of front-ends from well know
           Ecommerce platforms to Education applications.<br />
@@ -40,10 +40,10 @@ export default defineComponent({
       return 'mx-6 lg:mx-52 p-5 border border-son pt-12 shadow-xl md:flex justify-content';
     },
     titleClasses() {
-      return 'text-2xl font-black border-l-4 border-ana pl-3 text-ana mt-2 tracking-m';
+      return 'text-2xl font-black border-l-4 border-taupe pl-3 text-taupe mt-2 tracking-m';
     },
     linkClasses() {
-      return 'underline text-sm md:text-base text-ana underline-offset-8 mt-5 block';
+      return 'underline text-sm md:text-base text-taupe underline-offset-8 mt-5 block';
     },
   },
   created() {

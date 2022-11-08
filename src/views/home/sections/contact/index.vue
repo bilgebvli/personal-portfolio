@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <div class="contact__banner relative mt-12 shadow-2xl shadow-white">
+    <div class="contact__banner relative mt-12 shadow-2xl shadow-beige">
       <a href="mailto:bilgebvli@gmail.com" class="banner p-3 md:w-5/12">
         <span class="block text-3xl pb-3 font-black">Ask</span>
         <span class="border-b-4 text-4xl font-black">me</span>
@@ -14,14 +14,14 @@
       >
         <vue-feather type="chevron-up"></vue-feather>
       </div>
-      <h3 class="mt-14 text-mouth">INTERESTED IN WORKING TOGETHER?</h3>
+      <h3 class="mt-14 text-opal-beach">INTERESTED IN WORKING TOGETHER?</h3>
       <a
         href="mailto:bilgebvli@gmail.com"
-        class="text-sm underline underline-offset-4 mt-4 text-mouth"
+        class="text-sm underline underline-offset-4 mt-4 text-opal-beach"
       >
         Get Started!
       </a>
-      <div class="mt-14 text-mouth text-sm">
+      <div class="mt-14 text-opal-beach text-sm">
         <a
           v-for="(item, index) of socialMediaItems"
           :key="index"
@@ -32,7 +32,7 @@
           <vue-feather :type="item.icon" class="w-5"></vue-feather
         ></a>
       </div>
-      <p class="text-sm text-mouth mt-10">©2022 Bilge</p>
+      <p class="text-sm text-opal-beach mt-10">©2022 Bilge</p>
     </div>
   </div>
 </template>
@@ -44,7 +44,7 @@ export default defineComponent({
   name: 'SectionContact',
   computed: {
     containerClasses() {
-      return 'py-14 px-5 bg-renk text-center text-lg shadow-2xl shadow-renk relative';
+      return 'py-14 px-5 bg-light-taupe text-center text-lg shadow-2xl shadow-light-taupe relative';
     },
     socialMediaItems() {
       return [
@@ -90,6 +90,7 @@ export default defineComponent({
   methods: {
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+      this.$router.push('/');
     },
   },
 });

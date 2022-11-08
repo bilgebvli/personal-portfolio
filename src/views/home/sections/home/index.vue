@@ -30,10 +30,10 @@ export default defineComponent({
   name: 'SectionHome',
   computed: {
     rightTitleClasses() {
-      return 'absolute w-4/5 text-mouth	md:w-auto h-5 inset-y-1/2 left-5 md:inset-x-1/4 tracking-x md:text-xs text-ellipsis overflow-hidden ...';
+      return 'absolute w-4/5 text-opal-beach md:w-auto h-5 inset-y-1/2 left-5 md:inset-x-1/4 tracking-x md:text-xs text-ellipsis overflow-hidden ...';
     },
     leftMenuClasses() {
-      return 'bg-renk text-mouth flex items-center justify-center h-screen shadow';
+      return 'bg-light-taupe text-opal-beach flex items-center justify-center h-screen shadow';
     },
   },
   mounted() {

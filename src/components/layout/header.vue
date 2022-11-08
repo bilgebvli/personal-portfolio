@@ -1,7 +1,7 @@
 <template>
   <nav
     :class="{
-      'bg-renk items-center flex shadow-xl ease-in-out transition': true,
+      'bg-light-taupe items-center flex shadow-xl ease-in-out transition': true,
       'h-0': !active,
       'h-24	': active,
       active,

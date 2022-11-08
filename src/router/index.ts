@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  linkExactActiveClass: 'text-mouth',
+  linkExactActiveClass: 'text-opal-beach',
   scrollBehavior(to) {
     if (to.hash) {
       return {

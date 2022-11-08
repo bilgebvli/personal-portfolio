@@ -32,15 +32,15 @@ export default defineComponent({
           componentName: 'home',
         },
         {
-          bgColor: 'bg-finish',
+          bgColor: 'bg-alicia',
           componentName: 'about',
         },
         {
-          bgColor: 'bg-finish',
+          bgColor: 'bg-alicia',
           componentName: 'process',
         },
         {
-          bgColor: 'bg-finish',
+          bgColor: 'bg-alicia',
           componentName: 'contact',
         },
       ];
