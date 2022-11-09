@@ -2,7 +2,18 @@
   <div
     class="p-5 pt-5 bg-light-taupe contact shadow-xl shadow-light-taupe-500"
   ></div>
-  <!-- <img src="@/assets/images/photo-1619996940898-6d8f68ccccc6.jpeg" /> -->
+  <img
+    src="@/assets/images/a075499e1e472efa5a72692ea44e5cd1.jpeg"
+    class="w-52 md:w-72 img mx-auto block"
+  />
+  <h2 class="text-taupe text-center">E-commerse website. Furniture</h2>
+  <p class="text-taupe text-sm text-center">UI development</p>
+  <img
+    src="@/assets/images/a9be68f1fc60c7c4697fd503d86147b9.jpeg"
+    class="w-52 md:w-72 img mx-auto block"
+  />
+  <h2 class="text-taupe text-center">E-commerse website. Car</h2>
+  <p class="text-taupe text-sm text-center">UI development</p>
   <div class="deneme mx-0 lg:mx-20 md:grid md:grid-cols-2">
     <div :class="kk">
       <div class="text-center md:text-left mt-10">
@@ -152,5 +163,9 @@ export default defineComponent({
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+.img {
+  filter: grayscale(100%);
+  margin: 30px auto;
 }
 </style>
