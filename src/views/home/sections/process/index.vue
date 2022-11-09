@@ -2,28 +2,20 @@
   <div
     class="p-5 pt-5 bg-light-taupe contact shadow-xl shadow-light-taupe-500"
   ></div>
-
-  <div class="deneme mx-0 lg:mx-20 md:grid md:grid-cols-3">
-    <div :class="{ 'process-grid': true, active }">
-      <div class="relative banner mt-20 md:mt-32">
-        <img
-          src="@/assets/images/1667915720876.png"
-          class="absolute shadow-xl"
-        />
-      </div>
-    </div>
-    <div class="bg-alicia text-taupe mt-20 col-span-2">
-      <div class="text-center">
+  <!-- <img src="@/assets/images/photo-1619996940898-6d8f68ccccc6.jpeg" /> -->
+  <div class="deneme mx-0 lg:mx-20 md:grid md:grid-cols-2">
+    <div :class="kk">
+      <div class="text-center md:text-left mt-10">
         <h2 :class="titleClasses">Website Build Process</h2>
       </div>
-      <div class="md:grid gap-4 grid-cols-2 grid-rows-2">
+      <div class="md:grid grid-cols-1 grid-rows-1">
         <div :class="off" v-for="(item, index) of processItems" :key="index">
           <!-- <div class="h-5 border-l text-center w-3 inline-block my-5"></div> -->
           <img
             src="@/assets/images/ok.svg"
             class="mr-5"
-            width="30"
-            height="30"
+            width="20"
+            height="20"
           />
           <div>
             <h2 class="pb-1 text-base tracking-m">{{ item.title }}</h2>
@@ -31,7 +23,31 @@
           </div>
         </div>
       </div>
+      <a
+        href="mailto:bilgebvli@gmail.com"
+        class="border border-light-taupe p-3 text-light-taupe w-72 mt-5 md:block hidden text-center"
+      >
+        Get Started
+      </a>
     </div>
+    <div class="relative xx mt-20">
+      <img src="@/assets/images/1667915720876.png" />
+      <a
+        href="mailto:bilgebvli@gmail.com"
+        class="border border-light-taupe p-3 text-light-taupe w-2/4 absolute md:hidden block text-center"
+      >
+        Get Started
+      </a>
+    </div>
+
+    <!-- <div :class="{ 'process-grid col-span-1': true, active }">
+      <div class="banner mt-20 md:mt-32">
+  
+        <button class="border border-light-taupe p-3 text-light-taupe w-2/4">
+          Get Started
+        </button>
+      </div>
+    </div> -->
   </div>
 </template>
 
@@ -53,11 +69,21 @@ export default defineComponent({
           pl-3 inline-block tracking-m`;
     },
     off() {
-      return `mb-3
-          p-5
-          hover:scale-105
-          ease-out
-          duration-300 flex`;
+      return `px-5 md:px-0 md-px-0 py-3 flex`;
+    },
+    kk() {
+      return `bg-alicia
+        text-taupe
+        mt-20
+        md:mt-10
+        border
+        md:border-0
+        border-son
+        mx-5
+        md:mx-0
+        shadow-xl
+        md:shadow-none
+        order-last pb-10`;
     },
     processItems() {
       return [
@@ -99,18 +125,18 @@ export default defineComponent({
 </script>
 <style scoped lang="scss">
 .banner {
-  background: url('@/assets/images/bg.jpeg');
+  background: url('@/assets/images/1667915720876.png');
   min-height: 452px;
-  max-width: 300px;
+  // max-width: 300px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
-  left: 7%;
-  img {
-    margin-top: 40px;
-    margin-left: 40px;
-  }
+  // left: 7%;
+  // img {
+  //   margin-top: 40px;
+  //   margin-left: 40px;
+  // }
 }
 .process-grid {
   opacity: 0;
@@ -118,6 +144,13 @@ export default defineComponent({
     opacity: 1;
     transform: translate3d(0, -20px, 0);
     transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+}
+.xx {
+  a {
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 </style>
