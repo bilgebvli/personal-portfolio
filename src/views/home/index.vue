@@ -13,7 +13,7 @@
 import { defineComponent } from 'vue';
 import about from './sections/about/index.vue';
 import home from './sections/home/index.vue';
-import process from './sections/process/index.vue';
+import projects from './sections/projects/index.vue';
 import contact from './sections/contact/index.vue';
 
 export default defineComponent({
@@ -21,7 +21,7 @@ export default defineComponent({
   components: {
     about,
     home,
-    process,
+    projects,
     contact,
   },
   computed: {
@@ -37,7 +37,7 @@ export default defineComponent({
         },
         {
           bgColor: 'bg-alicia',
-          componentName: 'process',
+          componentName: 'projects',
         },
         {
           bgColor: 'bg-alicia',

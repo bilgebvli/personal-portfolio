@@ -46,8 +46,8 @@ export default defineComponent({
           space: false,
         },
         {
-          urlHash: 'process',
-          title: 'Process',
+          urlHash: 'projects',
+          title: 'Projects',
           space: true,
         },
         {
