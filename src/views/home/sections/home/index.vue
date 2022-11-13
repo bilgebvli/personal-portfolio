@@ -16,7 +16,7 @@
     <div class="relative shadow">
       <p :class="rightTitleClasses">FREELANCECURRENTLY</p>
       <img
-        src="@/assets/images/deneme.jpeg"
+        src="@/assets/images/banner.jpeg"
         class="w-full h-screen object-cover opacity-90"
       />
     </div>
