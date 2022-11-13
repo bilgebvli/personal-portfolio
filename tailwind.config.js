@@ -11,6 +11,7 @@ module.exports = {
       taupe: '#b0a197',
       'light-taupe': '#b4a194',
       'opal-beach': '#f5e4d7',
+      mouth: '#d5bea7',
     },
     container: {
       center: true,

@@ -2,18 +2,23 @@
   <div
     class="p-5 pt-5 bg-light-taupe contact shadow-xl shadow-light-taupe-500"
   ></div>
-  <img
-    src="@/assets/images/a075499e1e472efa5a72692ea44e5cd1.jpeg"
-    class="w-52 md:w-72 img mx-auto block"
-  />
-  <h2 class="text-taupe text-center">E-commerse website. Furniture</h2>
-  <p class="text-taupe text-sm text-center">UI development</p>
-  <img
-    src="@/assets/images/a9be68f1fc60c7c4697fd503d86147b9.jpeg"
-    class="w-52 md:w-72 img mx-auto block"
-  />
-  <h2 class="text-taupe text-center">E-commerse website. Car</h2>
-  <p class="text-taupe text-sm text-center">UI development</p>
+  <div>
+    <div class="text-center mt-20">
+      <h2 :class="titleClasses1">Projects</h2>
+    </div>
+    <img
+      src="@/assets/images/a075499e1e472efa5a72692ea44e5cd1.jpeg"
+      class="w-52 h-48 object-cover md:h-auto md:w-72 img mx-auto block"
+    />
+    <h2 class="text-taupe text-center">Car e-commerce website</h2>
+    <p class="text-taupe text-sm text-center">UI development</p>
+    <img
+      src="@/assets/images/a9be68f1fc60c7c4697fd503d86147b9.jpeg"
+      class="w-52 h-48 md:h-auto object-cover md:w-72 img mx-auto block"
+    />
+    <h2 class="text-taupe text-center">Furniture e-commerce website</h2>
+    <p class="text-taupe text-sm text-center">UI development</p>
+  </div>
   <div class="deneme mx-0 lg:mx-20 md:grid md:grid-cols-2">
     <div :class="kk">
       <div class="text-center md:text-left mt-10">
@@ -41,11 +46,11 @@
         Get Started
       </a>
     </div>
-    <div class="relative xx mt-20">
+    <div :class="{ 'process-grid relative xx mt-20': true, active }">
       <img src="@/assets/images/1667915720876.png" />
       <a
         href="mailto:bilgebvli@gmail.com"
-        class="border border-light-taupe p-3 text-light-taupe w-2/4 absolute md:hidden block text-center"
+        class="p-3 w-2/4 absolute md:hidden block text-center bg-mouth text-opal-beach"
       >
         Get Started
       </a>
@@ -53,7 +58,6 @@
 
     <!-- <div :class="{ 'process-grid col-span-1': true, active }">
       <div class="banner mt-20 md:mt-32">
-  
         <button class="border border-light-taupe p-3 text-light-taupe w-2/4">
           Get Started
         </button>
@@ -95,6 +99,9 @@ export default defineComponent({
         shadow-xl
         md:shadow-none
         order-last pb-10`;
+    },
+    titleClasses1() {
+      return 'text-2xl font-black border-l-4 border-taupe pl-3 text-taupe mt-2 tracking-m inline-block';
     },
     processItems() {
       return [
