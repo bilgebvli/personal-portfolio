@@ -28,7 +28,7 @@ export default defineComponent({
     sectionItems() {
       return [
         {
-          bgColor: 'bg-puff',
+          bgColor: 'bg-light-grey',
           componentName: 'home',
         },
         {

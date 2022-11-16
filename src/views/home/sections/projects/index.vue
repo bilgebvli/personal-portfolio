@@ -19,7 +19,7 @@
     <h2 class="text-taupe text-center">Furniture e-commerce website</h2>
     <p class="text-taupe text-sm text-center">UI development</p>
   </div>
-  <div class="deneme mx-0 lg:mx-20 md:grid md:grid-cols-2">
+  <div class="mx-0 lg:mx-20 md:grid md:grid-cols-2">
     <div :class="kk">
       <div class="text-center md:text-left mt-10">
         <h2 :class="titleClasses">Website Build Process</h2>

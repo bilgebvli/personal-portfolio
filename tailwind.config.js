@@ -7,7 +7,7 @@ module.exports = {
       beige: '#c8bfb5',
       alicia: '#f1f1ef',
       son: '#a4978b2b',
-      puff: '#e8e6da2b',
+      'light-grey': '#e8e6da2b',
       taupe: '#b0a197',
       'light-taupe': '#b4a194',
       'opal-beach': '#f5e4d7',
