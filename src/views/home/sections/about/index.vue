@@ -18,7 +18,7 @@
         </a>
       </div>
       <div class="pt-5 w-full md:w-2/5">
-        <img src="@/assets/images/1668293820542.jpeg" class="ml-11 mt-5" />
+        <img src="@/assets/images/1668710692922.jpeg" class="ml-11 mt-5" />
       </div>
     </div>
   </div>

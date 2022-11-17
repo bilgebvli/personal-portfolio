@@ -2,22 +2,26 @@
   <div
     class="p-5 pt-5 bg-light-taupe contact shadow-xl shadow-light-taupe-500"
   ></div>
-  <div>
+  <div class="mx-6 lg:mx-80">
     <div class="text-center mt-20">
       <h2 :class="titleClasses1">Projects</h2>
     </div>
-    <img
-      src="@/assets/images/a075499e1e472efa5a72692ea44e5cd1.jpeg"
-      class="w-52 h-48 object-cover md:h-auto md:w-72 img mx-auto block"
-    />
-    <h2 class="text-taupe text-center">Car e-commerce website</h2>
-    <p class="text-taupe text-sm text-center">UI development</p>
-    <img
-      src="@/assets/images/a9be68f1fc60c7c4697fd503d86147b9.jpeg"
-      class="w-52 h-48 md:h-auto object-cover md:w-72 img mx-auto block"
-    />
-    <h2 class="text-taupe text-center">Furniture e-commerce website</h2>
-    <p class="text-taupe text-sm text-center">UI development</p>
+    <div class="text-center md:text-left">
+      <img
+        src="@/assets/images/a075499e1e472efa5a72692ea44e5cd1.jpeg"
+        class="w-52 h-48 object-cover md:h-auto md:w-72 img mx-auto md:mx-0 block"
+      />
+      <h2 class="text-taupe">Furniture e-commerce website</h2>
+      <p class="text-taupe text-sm">UI development</p>
+    </div>
+    <div class="text-center md:text-right md:-mt-36">
+      <img
+        src="@/assets/images/a9be68f1fc60c7c4697fd503d86147b9.jpeg"
+        class="w-52 h-48 md:h-auto object-cover md:w-72 img mx-auto md:ml-auto md:mr-0 block ml-auto"
+      />
+      <h2 class="text-taupe">Car e-commerce website</h2>
+      <p class="text-taupe text-sm">UI development</p>
+    </div>
   </div>
   <div class="mx-0 lg:mx-20 md:grid md:grid-cols-2">
     <div :class="kk">
@@ -46,7 +50,7 @@
         Get Started
       </a>
     </div>
-    <div :class="{ 'process-grid relative xx mt-20': true, active }">
+    <div :class="{ 'process-grid relative get-started mt-20': true, active }">
       <img src="@/assets/images/1667915720876.png" />
       <a
         href="mailto:bilgebvli@gmail.com"
@@ -164,7 +168,7 @@ export default defineComponent({
     transition: 1.5s all cubic-bezier(0.39, 0.575, 0.565, 1);
   }
 }
-.xx {
+.get-started {
   a {
     top: 120px;
     left: 50%;
@@ -173,6 +177,7 @@ export default defineComponent({
 }
 .img {
   filter: grayscale(100%);
-  margin: 30px auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 </style>
