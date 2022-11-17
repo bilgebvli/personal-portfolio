@@ -17,8 +17,8 @@ export default defineComponent({
   height: 100vh;
   .img {
     border-radius: 100%;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
   }
 }
 </style>
