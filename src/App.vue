@@ -1,11 +1,13 @@
 <template>
   <transition name="fade" mode="out-in">
-    <div v-if="!isLoading">
+    <div>
       <Header />
       <router-view />
     </div>
-    <ui-loading v-else></ui-loading>
   </transition>
+  <transition name="fade" mode="out-in"
+    ><ui-loading v-if="isLoaded"></ui-loading
+  ></transition>
 </template>
 
 <script lang="ts">
@@ -17,15 +19,10 @@ export default defineComponent({
   components: {
     Header,
   },
-  data() {
-    return {
-      isLoading: true,
-    };
-  },
-  mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 1500);
+  computed: {
+    isLoaded() {
+      return this.$store.getters.getIsLoading;
+    },
   },
 });
 </script>
