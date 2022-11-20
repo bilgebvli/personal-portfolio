@@ -18,7 +18,6 @@
       <img
         src="@/assets/images/banner.jpeg"
         class="w-full h-screen object-cover opacity-90"
-        @load="loaded"
       />
     </div>
   </div>
@@ -35,11 +34,6 @@ export default defineComponent({
     },
     leftMenuClasses() {
       return 'bg-light-taupe text-opal-beach flex items-center justify-center h-screen shadow';
-    },
-  },
-  methods: {
-    loaded() {
-      this.$store.commit('setIsLoading', false);
     },
   },
   mounted() {
