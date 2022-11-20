@@ -4,7 +4,7 @@
       <Header />
       <router-view />
     </div>
-    <ui-loading-screen v-else></ui-loading-screen>
+    <ui-loading v-else></ui-loading>
   </transition>
 </template>
 
@@ -29,14 +29,3 @@ export default defineComponent({
   },
 });
 </script>
-<style>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 1s ease;
-}
-
-.fade-enter-from,
-.fade-leave-active {
-  opacity: 0;
-}
-</style>

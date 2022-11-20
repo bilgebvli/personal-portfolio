@@ -1,4 +1,4 @@
 import UiSection from '@/components/ui/section.vue';
-import UiLoadingScreen from '@/components/ui/loading-screen.vue';
+import UiLoading from '@/components/ui/loading.vue';
 
-export default [UiSection, UiLoadingScreen];
+export default [UiSection, UiLoading];
