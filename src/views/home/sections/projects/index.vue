@@ -2,7 +2,7 @@
   <div
     class="p-5 pt-5 bg-light-taupe contact shadow-xl shadow-light-taupe-500"
   ></div>
-  <div class="mx-6 lg:mx-80">
+  <div :class="{ 'mx-6 lg:mx-80 process-grid': true, active }">
     <div class="text-center mt-20">
       <h2 :class="titleClasses1">Projects</h2>
     </div>
@@ -50,7 +50,7 @@
         Get Started
       </a>
     </div>
-    <div :class="{ 'process-grid relative get-started mt-20': true, active }">
+    <div class="relative get-started mt-20">
       <img src="@/assets/images/1667915720876.png" />
       <a
         href="mailto:bilgebvli@gmail.com"
@@ -140,7 +140,7 @@ export default defineComponent({
   },
   methods: {
     handleScroll() {
-      if (window.scrollY > 1500) this.active = true;
+      if (window.scrollY > 1300) this.active = true;
     },
   },
 });
