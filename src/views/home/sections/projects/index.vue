@@ -6,21 +6,13 @@
     <div class="text-center mt-20">
       <h2 :class="titleClasses1">Projects</h2>
     </div>
-    <div class="text-center md:text-left">
+    <div :class="item.class" v-for="(item, index) of projectItems" :key="index">
       <img
-        src="@/assets/images/a075499e1e472efa5a72692ea44e5cd1.jpeg"
-        class="w-52 h-48 object-cover md:h-auto md:w-72 img mx-auto md:mx-0 block"
+        :src="require('@/assets/images/' + item.img.url)"
+        :class="item.img.class"
       />
-      <h2 class="text-taupe">Furniture e-commerce website</h2>
-      <p class="text-taupe text-sm">UI development</p>
-    </div>
-    <div class="text-center md:text-right md:-mt-36">
-      <img
-        src="@/assets/images/a9be68f1fc60c7c4697fd503d86147b9.jpeg"
-        class="w-52 h-48 md:h-auto object-cover md:w-72 img mx-auto md:ml-auto md:mr-0 block ml-auto"
-      />
-      <h2 class="text-taupe">Car e-commerce website</h2>
-      <p class="text-taupe text-sm">UI development</p>
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.text }}</p>
     </div>
   </div>
   <div class="mx-0 lg:mx-20 md:grid md:grid-cols-2">
@@ -30,7 +22,6 @@
       </div>
       <div class="md:grid grid-cols-1 grid-rows-1">
         <div :class="off" v-for="(item, index) of processItems" :key="index">
-          <!-- <div class="h-5 border-l text-center w-3 inline-block my-5"></div> -->
           <img
             src="@/assets/images/ok.svg"
             class="mr-5"
@@ -43,30 +34,34 @@
           </div>
         </div>
       </div>
-      <a
+      <ui-button
+        title="Get Started"
         href="mailto:bilgebvli@gmail.com"
-        class="border border-light-taupe p-3 text-light-taupe w-72 mt-5 md:block hidden text-center"
-      >
-        Get Started
-      </a>
+        classes="border border-light-taupe
+          p-3
+          text-light-taupe
+          w-72
+          mt-5
+          md:block
+          hidden
+          text-center"
+      ></ui-button>
     </div>
     <div class="relative get-started mt-20">
       <img src="@/assets/images/1667915720876.png" />
-      <a
+      <ui-button
+        title="Get Started"
         href="mailto:bilgebvli@gmail.com"
-        class="p-3 w-2/4 absolute md:hidden block text-center bg-mouth text-opal-beach"
-      >
-        Get Started
-      </a>
+        classes="p-3
+          w-2/4
+          absolute
+          md:hidden
+          block
+          text-center
+          bg-mouth
+          text-opal-beach"
+      ></ui-button>
     </div>
-
-    <!-- <div :class="{ 'process-grid col-span-1': true, active }">
-      <div class="banner mt-20 md:mt-32">
-        <button class="border border-light-taupe p-3 text-light-taupe w-2/4">
-          Get Started
-        </button>
-      </div>
-    </div> -->
   </div>
 </template>
 
@@ -79,6 +74,30 @@ export default defineComponent({
     return { active: false };
   },
   computed: {
+    projectItems() {
+      return [
+        {
+          title: 'Furniture e-commerce website',
+          text: 'UI development',
+          img: {
+            url: 'a075499e1e472efa5a72692ea44e5cd1.jpeg',
+            class:
+              'w-52 h-48 object-cover md:h-auto md:w-72 img mx-auto md:mx-0 block',
+          },
+          class: 'text-center md:text-left text-taupe text-sm',
+        },
+        {
+          title: 'Car e-commerce website',
+          text: 'UI development',
+          img: {
+            url: 'a9be68f1fc60c7c4697fd503d86147b9.jpeg',
+            class:
+              'w-52 h-48 md:h-auto object-cover md:w-72 img mx-auto md:ml-auto md:mr-0 block ml-auto',
+          },
+          class: 'text-center md:text-right md:-mt-36 text-taupe text-sm',
+        },
+      ];
+    },
     titleClasses() {
       return `text-2xl
           mb-10

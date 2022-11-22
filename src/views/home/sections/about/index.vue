@@ -10,12 +10,11 @@
           I'm passionate about cutting-edge, pixel-perfect, beautiful interfaces
           and intuitively implemented UX.
         </p>
-        <a
+        <ui-button
+          title=" More about me"
           href="https://www.linkedin.com/in/bilge-bavli-210326170/"
-          :class="linkClasses"
-        >
-          More about me
-        </a>
+          classes="underline text-sm md:text-base text-taupe underline-offset-8 mt-5 block"
+        ></ui-button>
       </div>
       <div class="pt-5 w-full md:w-2/5">
         <img src="@/assets/images/1668710692922.jpeg" class="ml-11 mt-5" />
@@ -38,9 +37,6 @@ export default defineComponent({
     },
     titleClasses() {
       return 'text-2xl font-black border-l-4 border-taupe pl-3 text-taupe mt-2 tracking-m';
-    },
-    linkClasses() {
-      return 'underline text-sm md:text-base text-taupe underline-offset-8 mt-5 block';
     },
   },
   created() {

@@ -1,12 +1,5 @@
 <template>
   <div class="contact">
-    <!-- <div class="contact__banner relative mt-12 shadow-2xl shadow-beige">
-      <a href="mailto:bilgebvli@gmail.com" class="banner p-3 md:w-5/12">
-        <span class="block text-3xl pb-3 font-black">Ask</span>
-        <span class="border-b-4 text-4xl font-black">me</span>
-        <span class="block text-3xl pt-5 font-black">anything</span>
-      </a>
-    </div> -->
     <div :class="containerClasses">
       <div
         class="absolute p-5 contact__back-to-top cursor-pointer"
@@ -15,22 +8,21 @@
         <vue-feather type="chevron-up"></vue-feather>
       </div>
       <h3 class="mt-14 text-opal-beach">INTERESTED IN WORKING TOGETHER?</h3>
-      <a
+      <ui-button
+        title="Get Started!"
         href="mailto:bilgebvli@gmail.com"
-        class="text-sm underline underline-offset-4 mt-4 text-opal-beach"
-      >
-        Get Started!
-      </a>
+        classes="text-sm underline underline-offset-4 mt-4 text-opal-beach"
+      ></ui-button>
       <div class="mt-14 text-opal-beach text-sm">
-        <a
+        <ui-button
           v-for="(item, index) of socialMediaItems"
           :key="index"
           :href="item.url"
+          :classes="{ 'px-6': index === 1 }"
           target="_blank"
-          :class="{ 'px-6': index === 1 }"
         >
           <vue-feather :type="item.icon" class="w-5"></vue-feather
-        ></a>
+        ></ui-button>
       </div>
       <p class="text-sm text-opal-beach mt-10">©2022 Bilge</p>
     </div>
